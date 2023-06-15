@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/editProfil.css">
+</head>
+<body>
+    <header>
+        <h1>Edit Profile</h1>
+    </header>
+    <div class="container">
+        <div class="profile">
+            <img src="img/user.jpg" alt="Profile Picture">
+            <label for="profile-picture">Change Profile Picture</label>
+            <input type="file" id="profile-picture" name="profile-picture" accept="image/*" capture="camera">
+            <div class="details">
+            </div>
+        </div>
+        <div class="settings">
+            <form action="" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Update your name">
+
+                <label for="Username">Username:</label>
+                <input type="text" id="Username" name="Username" placeholder="Update your username">
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Update your email">
+
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" placeholder="Update a short bio about yourself"></textarea>
+                
+                
+            <div class="content">
+                <p>
+                Social Media
+                </p>
+                    <i class="fab fa-twitter"></i></li>
+                    <input id="link1" name="link1" placeholder="Add your Twitter"></input>
+                    <section></section>
+
+                    <i class="fab fa-tiktok"></i></li>
+                    <input id="link2" name="link2" placeholder="Add your Tiktok"></input>
+                    <section></section>
+
+                    <i class="fab fa-instagram"></i></li>
+                    <input id="link3" name="link3" placeholder="Add your Instagram"></input>
+                    <section></section>
+             
+          </div>
+          <button onclick="window.location.href='index.html'">Saved</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

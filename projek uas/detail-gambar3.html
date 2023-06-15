@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sew.nSlay</title>
+  <!-- my style -->
+  <link rel="stylesheet" href="css/beranda.css">
+
+  <!-- feather icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+</head>
+<body>
+     <!-- navbar start -->
+     <nav class="navbar">
+      <a href="#" class="navbar-logo">Sew.nSlay</a>
+      
+      <div class="navbar-nav">
+          <a href="beranda.html" class="button-beranda">Beranda</a>
+          <a href="upload.html" class="button-unggah">Unggah</a>
+      </div>
+
+      <div class="navbar-search">
+        <input type="text" placeholder="Cari...">
+        <button type="button">Cari</button>
+    </div>
+      <div class="navbar-ikon">
+          <a href="profilUpload.html" class="navbar-orang"><i data-feather="user"></i></a>
+          <a href="" class="navbar-orang"><i data-feather="log-out"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+  
+<div class="detail-wrapper" id="beranda">
+  <div class="image-container">
+    <img src="img/6.jpg" alt="Gambar 3"> 
+  </div>
+  <div class="description">
+    <div class="aksi">
+      <button id="likeButton" onclick="toggleLike()"><i id="heartIcon" class="far fa-heart"></i> Like</button>
+      <button id="saveButton" onclick="saveItem()"> Save </button>
+    </div>
+    <h1>Jumpsuit</h1>
+    <div class="detail-user">
+    <div class="img__container">
+      <img src="img/user.jpg"  alt="Alia Dewanto"/>
+      <a class="nama-user" href="user.html"> AliaDwt</a>
+      <a class="follow-button">Follow</a>
+    </div>
+    </div>
+    <div class="text-detail">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex corporis laudantium? Magni architecto assumenda alias veniam ipsam. Aut ducimus incidunt sed officia culpa eveniet pariatur consequatur tempora, fugit veniam!</p>
+    <h3>Ukuran</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe, sint quaerat cum, deleniti veritatis laudantium, illum fugit repellat error eum molestias fugiat earum nulla velit aut nesciunt maiores cupiditate.</p>
+    <h3>Jenis Acara</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dicta necessitatibus autem eos aliquid velit nobis! Ab eligendi debitis pariatur. Porro quis dolores quisquam dolor adipisci necessitatibus magnam autem tenetur?</p>
+    <a href="#" class="unduh-button">Unduh Pola</a>
+    </div>  
+</div>
+
+
+  <script>
+    feather.replace();
+    function toggleLike() {
+      var heartIcon = document.getElementById("heartIcon");
+      heartIcon.classList.toggle("liked");
+
+      if (heartIcon.classList.contains("liked")) {
+        heartIcon.classList.remove("far");
+        heartIcon.classList.add("fas");
+      } else {
+        heartIcon.classList.remove("fas");
+        heartIcon.classList.add("far");
+      }
+    }
+
+  </script>
+
+ 
+</body>
+</html>

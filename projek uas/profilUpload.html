@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/profile.css" />
+    <title>Halaman Profile</title>
+  </head>
+  <body>
+    <div class="header__wrapper">
+      <div class="cols__container">
+        <div class="left__col">
+          <div class="img__container">
+            <img src="<?php echo $profilePhoto; ?>" alt="Alia Dewanto" />
+            <span></span>
+          </div>
+          <div>
+           <h2><?php echo $namaPengguna; ?>a</h2>
+           <p>@username</p>
+            <button><a href="editProfil.html">Edit Profile</a></button>
+          </div>
+          
+          <ul class="about">
+            <li><span><?php echo $following; ?></span>Following</li>
+            <li><span><?php echo $followers; ?></span>Followers</li>
+          </ul>
+
+          <div class="content">
+            <p>
+              <?php echo $teksSayaAdalah; ?>
+            </p>
+
+            <ul>
+            <a href="<?php echo $twitterLink; ?>" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+              
+            <a href="<?php echo $tiktokLink; ?>" target="_blank">
+              <i class="fab fa-tiktok"></i>
+            </a>
+              
+            <a href="<?php echo $instagramLink; ?>" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            </ul>
+          </div>
+        </div>
+        <div class="button">
+          <nav>
+            <ul>
+              <label class="diunggah" onclick="window.location.href='profilUpload.html'">Diunggah</label>
+              <label></label>
+              <label onclick="window.location.href='profilSave.html'">Disimpan</label>
+            </ul>
+          </nav>          
+          <div class="photos">
+            <?php
+            if (!empty($uploadedPhotos)) {
+              foreach ($uploadedPhotos as $photo) {
+                echo '<img src="' . $photo . '" alt="Photo" style="border-radius: 15%;" />';
+              }
+            }
+            ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

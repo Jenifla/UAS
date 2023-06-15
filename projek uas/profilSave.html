@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/profile.css" />
+    <title>Halaman Profile</title>
+  </head>
+  <body>
+    <div class="header__wrapper">
+      <div class="cols__container">
+        <div class="left__col">
+          <div class="img__container">
+            <img src="img/user.jpg" alt="Alia Dewanto" />
+            <span></span>
+          </div>
+          <div>
+           <h2>Nama Pengguna</h2>
+           <p>@username</p>
+          <button><a href="editProfil.html">Edit Profile</a></button>
+          </div>
+          
+          <ul class="about">
+            <li><span>322</span>Following</li>
+            <li><span>4,073</span>Followers</li>
+          </ul>
+
+          <div class="content">
+            <p>
+              Saya adalah seorang fashion blogger yang senang berbagi
+              gaya dan tren terbaru kepada pembaca setia saya.
+              Dengan keterampilan dan pengetahuan yang saya peroleh
+              dalam industri ini, saya memadukan keahlian
+              dalam penulisan dengan ketertarikan mendalam
+              terhadap dunia model.
+            </p>
+
+            <ul>
+            <a href="https://twitter.com/namapengguna" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@namapengguna" target="_blank">
+              <i class="fab fa-tiktok"></i>
+            </a>
+
+            <a href="https://www.instagram.com/namapengguna" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>      
+            </ul>
+          </div>
+        </div>
+        <div class="button">
+          <nav>
+            <ul>
+              <label onclick="window.location.href='profilUpload.html'">Diunggah</label>
+              <label></label>
+              <label class="disimpan" onclick="window.location.href='profilSave.html'">Disimpan</label>
+            </ul>
+          </nav>          
+
+          <div class="photos">
+            <img src="img/i1.jpg" alt="i1" style="border-radius : 15%">
+            <img src="img/i2.jpg" alt="i2" style="border-radius : 15%">
+            <img src="img/i3.jpg" alt="i3" style="border-radius : 15%" />
+            <img src="img/i4.png" alt="i4" style="border-radius : 15%"/>
+            <img src="img/i5.jpg" alt="i5" style="border-radius : 15%"/>
+            <img src="img/i6.png" alt="i6" style="border-radius : 15%"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

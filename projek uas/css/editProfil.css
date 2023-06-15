@@ -1,0 +1,104 @@
+body {
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #925050;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: #d9b3c5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile label {
+    display: block;
+    color: #000000;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.settings {
+    margin-top: 20px;
+}
+
+.settings h3 {
+    width: 10px;
+    margin-bottom: 10px;
+}
+
+.settings form {
+    display: grid;
+    gap: 10px;
+}
+
+.settings label {
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.settings input[type="text"],
+.settings textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.settings button {
+    background-color: #9d7373;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    position: center;
+    width: 30%;
+    margin-left: 20px;
+}
+
+.settings button:hover {
+    background-color: #925050;
+}
+
+.content p {
+    font-size: 1.5rem;
+    color: #1d1d1d;
+    line-height: 0;
+    font-weight: normal;
+    margin-top: 50px;
+  }
+
+.content i {
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+
+.content input{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
